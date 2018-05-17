@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="2dp"
+        android:layout_marginRight="2dp"
+        tools:context="com.example.lenovo.cmps297n.OffActivity"
+
+        >
+        <TextView
+            android:layout_marginBottom="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:text="Explain your Time-Off request below"
+            android:id="@+id/title"
+            />
+
+
+
+
+
+        <EditText
+            android:layout_marginTop="45dp"
+            android:layout_marginBottom="20dp"
+            android:layout_width="match_parent"
+            android:layout_below="@id/title"
+            android:layout_height="60dp"
+            android:ellipsize="start"
+            android:hint=" Enter Reason"
+            android:inputType="textMultiLine"
+            android:background="@drawable/txt"
+            android:scrollbars="vertical"
+            android:lines="3"
+            android:maxLines="5"
+            android:id="@+id/reason"
+            />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_below="@id/reason"
+            android:orientation="horizontal"
+            android:id="@+id/l"
+
+            >
+
+            <EditText
+                android:layout_marginBottom="20dp"
+                android:layout_width="match_parent"
+                android:layout_weight="1"
+                android:layout_height="40dp"
+                android:id="@+id/Birthday"
+                android:clickable="true"
+                android:editable="false"
+                android:focusable="false"
+                android:gravity="center"
+                android:layout_marginRight="1dp"
+                android:background="@drawable/txt"
+                android:hint="Enter start Date"/>
+            <EditText
+                android:layout_marginBottom="20dp"
+                android:layout_width="match_parent"
+                android:layout_weight="1"
+                android:layout_height="40dp"
+                android:id="@+id/Birthday2"
+                android:clickable="true"
+                android:gravity="center"
+                android:layout_marginLeft="1dp"
+                android:editable="false"
+                android:focusable="false"
+                android:hint="Enter end Date"
+                android:background="@drawable/txt"
+                />
+        </LinearLayout>
+
+
+
+        <Spinner
+            android:layout_marginTop="20dp"
+            android:id="@+id/spinner"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:spinnerMode="dropdown"
+            android:layout_below="@id/l"
+            />
+        <CheckBox
+            android:id="@+id/checkBox"
+            android:layout_below="@id/spinner"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/tt"
+            android:text="You will be reachable in case of a work emergency" />
+
+        <CheckBox
+            android:layout_marginTop="20dp"
+            android:id="@+id/checkBox2"
+            android:layout_below="@id/checkBox"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/tt"
+            android:text="You may ask for an extension of requested period" />
+
+        <Button
+
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/submit"
+            android:text="Submit"
+            android:background="@color/colorSecondarylight"
+            android:layout_below="@id/checkBox2"
+            android:layout_marginTop="60dp"
+            />
+
+
+    </RelativeLayout>
+
+</ScrollView>

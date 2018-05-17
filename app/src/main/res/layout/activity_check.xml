@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+
+
+    >
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="20dp"
+        android:background="@color/colorSecondarylight"
+        android:id="@+id/zero"
+        />
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="90dp"
+        android:background="#c4001d"
+        android:layout_below="@+id/zero"
+android:id="@+id/one"
+        />
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="90dp"
+        android:background="@color/colorSecondary"
+        android:layout_below="@+id/one"
+        android:id="@+id/two"
+
+        />
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="90dp"
+        android:background="#424242"
+        android:layout_below="@+id/two"
+
+        />
+<TextView
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:id="@+id/tit"
+    android:text="CHECK IN/OUT"
+    android:layout_centerHorizontal="true"
+    android:textSize="18sp"
+    android:textColor="#FFFFFF"
+    android:textStyle="bold"
+    />
+<LinearLayout
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:id="@+id/bove"
+    android:layout_below="@id/tit"
+
+    >
+    <ImageView
+        android:id="@+id/c1"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:text="@string/Check_status"
+        android:textSize="20sp"
+        android:src="@drawable/status"
+        android:onClick="myClickMethod2"
+        />
+    <TextView
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+        android:id="@+id/status"
+        android:padding="5dp"
+    />
+    <ImageView
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:id="@+id/c2"
+        />
+
+</LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_below="@id/bove"
+        android:layout_marginTop="10dp"
+        android:id="@+id/lasti"
+
+        >
+        <ImageView
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:text="@string/Check_status_location"
+            android:textSize="20sp"
+            android:src="@drawable/location"
+            android:onClick="myClickMethod"
+            android:id="@+id/l1"
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="5dp"
+            android:id="@+id/loc"
+            />
+        <ImageView
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:id="@+id/l2"
+            />
+
+
+    </LinearLayout>
+
+
+    <ImageView
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:layout_marginTop="10dp"
+        android:layout_below="@+id/lasti"
+        android:src="@drawable/a"
+       android:onClick="Up"
+        android:id="@+id/person"
+        />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@id/person"
+        android:layout_below="@id/lasti"
+        android:layout_marginTop="20dp"
+        android:id="@+id/email"
+
+
+        />
+
+
+
+
+</RelativeLayout>
